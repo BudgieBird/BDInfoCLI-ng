@@ -1,4 +1,4 @@
-FROM mono:5.12.0.226
+FROM mono:latest
 
 RUN mkdir -p /usr/src/app/source /usr/src/app/build
 WORKDIR /usr/src/app/source
