@@ -2,10 +2,10 @@
 
 # Check for no arguments and display help from Docker image
 if [ "$#" -eq 0 ]; then
-    docker run --rm -it --user $(id -u) zoffline/bdinfocli-ng --help
+    docker run --rm -it --user $(id -u) budgiebird/bdinfocli-ng --help
     exit 1
 fi
 
 # Directly pass all arguments to Docker run
-docker run --rm -it --user $(id -u) zoffline/bdinfocli-ng "$@"
+docker run --rm -it --user $(id -u) budgiebird/bdinfocli-ng "$@"
 
